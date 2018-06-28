@@ -1,0 +1,94 @@
+<!--pages/work/work.wxml-->
+<view class="section">
+  <view class="top">
+    <view class="userInfo">
+      <view class="userInfo-main">
+        <view class="icon">
+          <image src="http://www.hzmvip.com/images/work/logo.png"></image>
+        </view>
+        <view class="info">
+          <view class="h4">
+            <view class="shop-name">蓝庭分店</view>
+            <view class="shop-state">营业中</view>
+          </view>
+          <view class="p">营业时间：9:00-12:00 14:00-20:00</view>
+          <view class="p">身份：员工</view>
+        </view>
+      </view>
+      <view class="userInfo-toggle">
+        <image src='http://www.hzmvip.com/images/work/toggle.png'></image>
+        <view class='toggle_txt'>切换身份</view>
+      </view>
+    </view>
+    <view class="userNum">
+      <view class="list">
+        <navigator url="" hover-class='none'>
+          <view class="span">
+            <view class="i">100</view>元
+          </view>
+          <view class="text">本月业绩</view>
+        </navigator>
+      </view>
+      <view class="list">
+        <navigator url="" hover-class='none'>
+          <view class="span">
+            <view class="i">10</view>元
+          </view>
+          <view class="text">本月提成</view>
+        </navigator>
+      </view>
+      <view class="list">
+        <navigator url="" hover-class='none'>
+          <view class="span">
+            <view class="i">100</view>元
+          </view>
+          <view class="text">卡项划扣</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="head">常用操作</view>
+    <view class="list-content">
+      <view class="item" wx:for="{{operations}}" wx:key="index">
+        <navigator url="{{item.url}}" hover-class='none'>
+          <image src="{{item.icon}}"></image>
+          <view class="text">{{item.text}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="head">行政管理</view>
+    <view class="list-content">
+      <view class="item" wx:for="{{managements}}" wx:key="index">
+        <navigator url="{{item.url}}" hover-class='none'>
+          <image src="{{item.icon}}"></image>
+          <view class="text">{{item.text}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="head">拓客营销</view>
+    <view class="list-content">
+      <view class="item" wx:for="{{marketings}}" wx:key="index">
+        <navigator url="{{item.url}}" hover-class='none'>
+          <image src="{{item.icon}}"></image>
+          <view class="text">{{item.text}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+   <view class="content">
+    <view class="head">店务分析</view>
+    <view class="list-content">
+      <view class="item" wx:for="{{analysis}}" wx:key="index">
+        <navigator url="{{item.url}}" hover-class='none'>
+          <image src="{{item.icon}}"></image>
+          <view class="text">{{item.text}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,50 @@
+<!--pages/message/message.wxml-->
+<view class="section">
+  <view class="head">
+    <view class="search-box">
+      <icon class="search-icon" type="search" size="20" />
+      <view style="width: 100%;">
+        <input placeholder='搜索' placeholder-style='font-size: 14px; color: #ccc;' bindinput='userNameInput' />
+      </view>
+    </view>
+  </view>
+  <view class="msg-group">
+    <view class="msg-group-item" wx:for="{{listData}}" wx:key="{{index}}">
+      <view class="msg-group-item__left">
+        <image src="{{item.listIcon}}"></image>
+      </view>
+      <view class="msg-group-item__right">
+        <view class="content-top">
+          <view class="item-title">{{item.listTitle}}</view>
+          <view class="item-type" wx:if="{{item.listType}}">{{item.listType}}</view>
+          <view class="item-time">{{item.listTime}}</view>
+        </view>
+        <view class="content-bottom">{{item.listContent}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<navigator class="customer-logo" url="../addRecords/addRecords" hover-class="none">
+  <image src="http://www.hzmvip.com/images/message/xf.png"></image>
+</navigator>
+
+<!-- <view class="footer">
+  <view class="nav">
+    <image class="nav_img" src="http://www.hzmvip.com/images/footer/xx1.png"></image>
+    <view class="nav_num">3</view>
+    <view class="nav_txt">消息</view>
+  </view>
+  <navigator class="nav" url="../work/work" open-type='redirect'>
+    <image class="nav_img" src="http://www.hzmvip.com/images/footer/gz.png"></image>
+    <view class="nav_num">3</view>
+    <view class="nav_txt">工作</view>
+  </navigator>
+  <navigator class="nav" url="../managerCustomerData_new/managerCustomerData_new" open-type='redirect'>
+    <image class="nav_img" src="http://www.hzmvip.com/images/footer/da.png"></image>
+    <view class="nav_txt">档案</view>
+  </navigator>
+  <navigator class="nav" url="../userCenter/userCenter" open-type='redirect'>
+    <image class="nav_img" src="http://www.hzmvip.com/images/footer/wd.png"></image>
+    <view class="nav_txt">我的</view>
+  </navigator>
+</view> -->

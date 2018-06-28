@@ -1,0 +1,26 @@
+<!--pages/managerCustomerData_new/managerCustomerData_new.wxml-->
+<view class="page">
+  <!-- 标签tab -->
+  <view class="page-tab">
+    <block wx:for="{{tabs}}" wx:key="{{index}}">
+      <view id="{{index}}" class="tab-item {{activeIndex == index ? 'selected' : ''}}" bindtap='toggleTab'>
+        <view class="text">{{item}}</view>
+      </view>
+    </block>
+    <view class="tab__slider" 
+      style="width: {{width}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);">
+    </view>
+  </view>
+  <view class="page-content">
+    <!-- 门店顾客 -->
+    <view class="shop-customer" hidden="{{activeIndex != 0}}">
+    门店顾客
+    </view>
+    <!-- 我的顾客 -->
+    <view class="my-customer" hidden="{{activeIndex != 1}}">
+      <view class="list" wx:for="{{list}}" wx:key="{{index}}">
+        <image class="user-image" src="{{item.src}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

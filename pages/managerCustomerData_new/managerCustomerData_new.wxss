@@ -1,0 +1,31 @@
+/* pages/managerCustomerData_new/managerCustomerData_new.wxss */
+.page{
+  height: 100%;
+  background-color: #fff;
+}
+.page-tab{
+  position: relative;
+  display: flex;
+}
+.page-tab .tab-item{
+  width: 50%;
+  padding: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.page-tab .tab-item.selected{
+  color: #fe6771;
+}
+.tab__slider{
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 4rpx;
+  background-color: #ef5b5b;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}

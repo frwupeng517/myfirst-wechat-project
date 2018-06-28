@@ -1,0 +1,7 @@
+  <!--index.wxml-->
+<view class="container">
+  <!-- <navigator class="item" url=>消息</navigator>
+  <navigator class="item">工作</navigator>
+  <navigator class="item">档案</navigator>
+  <navigator class="item">我的</navigator> -->
+</view>

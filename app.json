@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/message/message",
+    "pages/logs/logs",
+    "pages/work/work",
+    "pages/managerCustomerData_new/managerCustomerData_new",
+    "pages/userCenter/userCenter",
+    "pages/addRecords/addRecords"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "消息",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#f73e39",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "pages/index/img/message.png",
+        "selectedIconPath": "pages/index/img/message_selected.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/work/work",
+        "iconPath": "pages/index/img/work.png",
+        "selectedIconPath": "pages/index/img/work_selected.png",
+        "text": "工作"
+      },
+      {
+        "pagePath": "pages/managerCustomerData_new/managerCustomerData_new",
+        "iconPath": "pages/index/img/managerCustomerData.png",
+        "selectedIconPath": "pages/index/img/managerCustomerData_selected.png",
+        "text": "档案"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "iconPath": "pages/index/img/userCenter.png",
+        "selectedIconPath": "pages/index/img/userCenter_selected.png",
+        "text": "用户"
+      }
+    ]
+  }
+}
