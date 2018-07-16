@@ -1,17 +1,18 @@
 {
-  "pages":[
+  "pages": [
     "pages/message/message",
     "pages/logs/logs",
     "pages/work/work",
     "pages/managerCustomerData_new/managerCustomerData_new",
     "pages/userCenter/userCenter",
-    "pages/addRecords/addRecords"
+    "pages/addRecords/addRecords",
+    "pages/setCustomerData/setCustomerData"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "消息",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#666",

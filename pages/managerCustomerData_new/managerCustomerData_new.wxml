@@ -14,12 +14,63 @@
   <view class="page-content">
     <!-- 门店顾客 -->
     <view class="shop-customer" hidden="{{activeIndex != 0}}">
-    门店顾客
+      <view >
+        <view class="search-content">
+          <view class="top {{search === true ? 'backend' : ''}}">
+            <view class="search-container" hidden='{{search ? false:true}}'>
+              <view class="search-box" catchtap='toggleSearchBox' >
+                <image src="http://www.hzmvip.com/images/sousuo.png"></image>
+                <view class="placeholder-txt">可用名字、手机号或美容师搜索</view>
+              </view>
+            </view>
+            <view class="search-input">
+              <view class="search-input__inner" hidden='{{search ? true:false}}'>
+                <view class="search-input__box">
+                <image src="http://www.hzmvip.com/images/customerData/customer_search.png"></image>
+                <view class="search_input">
+                  <input placeholder="可用名字、手机号或美容师搜索" bindconfirm='myway' focus='{{ss}}' placeholder-style="font-size:12px;" />
+                </view>
+              </view>
+              <view class="search-btn" catchtap='toggleSearchBox'>取消</view>
+              </view>
+            </view>
+            <view class="add">
+              <view class="add_image" catchtap="toggle">
+                <image class="add-icon" src='http://www.hzmvip.com/images/managerCustomerData/add.png'></image>
+              </view>
+              <view class="add_content" hidden='{{add ? false : true}}'>
+                <navigator hover-class='none' class="new-item" url='../setCustomerData/setCustomerData'>
+                  <image class='new-item__icon' src='http://www.hzmvip.com/images/managerCustomerData/xinjian.png' mode="widthFix"></image>
+                  <view class='new-item__text'>新建</view>
+                </navigator>
+                <view class='new-item'>
+                  <image class='new-item__icon' src='http://www.hzmvip.com/images/managerCustomerData/fenpei.png' mode='widthFix'></image>
+                  <view class='new-item__text'>分配</view>
+                </view>
+                <view class='new-item'>
+                  <image class='new-item__icon' src='http://www.hzmvip.com/images/managerCustomerData/shaixuan.png' mode='widthFix'></image>
+                  <view class='new-item__text'>筛选</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
     </view>
     <!-- 我的顾客 -->
     <view class="my-customer" hidden="{{activeIndex != 1}}">
       <view class="list" wx:for="{{list}}" wx:key="{{index}}">
         <image class="user-image" src="{{item.src}}"></image>
+        <view class="main-content">
+          <view class="name">{{item.name}}</view>
+          <view class="time">
+            <image class="time-image" src="http://www.hzmvip.com/images/time.png"></image>
+            <view class="time-text">最近活跃时间：2017-8-8</view>
+          </view>
+        </view>
+        <view class="tel-icon">
+          <image src="http://www.hzmvip.com/images/managerCustomerData/phone.png" mode="widthFix"></image>
+        </view>
       </view>
     </view>
   </view>

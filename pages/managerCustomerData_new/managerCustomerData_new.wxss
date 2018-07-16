@@ -6,6 +6,7 @@
 .page-tab{
   position: relative;
   display: flex;
+  border-bottom:6rpx solid #eee;
 }
 .page-tab .tab-item{
   width: 50%;
@@ -28,4 +29,164 @@
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.my-customer .list{
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  border-bottom: 1px solid #eee;
+}
+.user-image{
+  width:90rpx;
+  height: 90rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+.main-content{
+  flex: 1;
+}
+.main-content .name{
+  font-size: 28rpx;
+  color: #666;
+}
+.main-content .time{
+
+}
+.main-content .time-image{
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 10rpx;
+}
+.main-content .time-text{
+  display: inline-block;
+  font-size: 24rpx;
+  color: #666;
+}
+.tel-icon{
+  margin-top: 6rpx;
+}
+.tel-icon image{
+  width: 50rpx;
+}
+.search-content{
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+.search-content .top{
+  display: flex;
+  align-items: center;
+  padding: 10rpx 0 10rpx 20rpx;
+}
+.backend{
+  background-color: #eee;
+}
+.top .search-container{
+  flex: 1;
+}
+.top .search-box{
+  display: flex;
+  align-items: center;
+  padding: 14rpx 40rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.top .search-box image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+.top .search-box .placeholder-txt{
+  font-size: 28rpx;
+  color: #acacac;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.top .search-input{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.search-input__inner{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.top .search-input .search-input__box{
+  display: flex;
+  align-items: center;
+  width: 78%;
+  height: 56rpx;
+  margin-right: 20rpx;
+  padding: 10rpx 0;
+  border-radius: 10rpx;
+  background-color: #eee;
+}
+.search-input__box image{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 20rpx;
+}
+.search-input__box .search_input{
+  width: 100%;
+  font-size: 28rpx;
+}
+.search-input__box .search_input input{
+  
+}
+.top .search-input .search-btn{
+  font-size: 28rpx;
+  color: #acacac;
+}
+.top .add{
+  position: relative;
+}
+.top .add .add_image{
+  padding: 10rpx 30rpx 10rpx 0;
+  font-size: 0;
+  text-align: center;
+}
+.top .add .add_image .add-icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 30rpx;
+}
+.add .add_content{
+  position: absolute;
+  top: 76rpx;
+  right: 8rpx;
+  color: #fff;
+  background-color: #333;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  z-index: 99;
+}
+.add .add_content::before{
+  position: absolute;
+  left: 77%;
+  top: -30rpx;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  margin-left: -16rpx;
+  font-size: 0;
+  border-width: 16rpx;
+  border-style: dashed dashed solid;
+  border-color: transparent transparent #333;
+}
+.add .add_content .new-item{
+  display: flex;
+  align-items: center;
+  padding: 20rpx 40rpx;
+  border-bottom: 1px solid #fff;
+}
+.add_content .new-item .new-item__icon{
+  width: 30rpx;
+  margin-right: 10rpx;
+}
+.add_content .new-item .new-item__text{
+  width: 60rpx;
 }

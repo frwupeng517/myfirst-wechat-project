@@ -7,6 +7,8 @@ Page({
   data: {
     activeIndex: 0,
     sliderOffset: 0,
+    search: true,
+    add: false,
     tabs: ["门店顾客", "我的顾客"],
     list: [
       { "id": 1, 'selected': false, "phone": '18272058288', "src": "http://www.hzmvip.com/images/customer.jpg", "name": "小金" },
@@ -20,10 +22,21 @@ Page({
   },
   // 切换标签页
   toggleTab: function(e) {
-    console.log(e)
     this.setData({
       activeIndex: e.currentTarget.id,
       sliderOffset: e.currentTarget.offsetLeft
+    })
+  },
+  // 切换显示增加按钮操作框
+  toggle: function(e) {
+    this.setData({
+      add: !this.data.add
+    })
+  },
+  // 切换显示搜索框
+  toggleSearchBox(e) {
+    this.setData({
+      search: !this.data.search
     })
   },
   /**
