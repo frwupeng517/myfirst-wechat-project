@@ -14,7 +14,7 @@
   <view class="page-content">
     <!-- 门店顾客 -->
     <view class="shop-customer" hidden="{{activeIndex != 0}}">
-      <view >
+      <view class="shop-customer__wrapper">
         <view class="search-content">
           <view class="top {{search === true ? 'backend' : ''}}">
             <view class="search-container" hidden='{{search ? false:true}}'>
@@ -28,7 +28,7 @@
                 <view class="search-input__box">
                 <image src="http://www.hzmvip.com/images/customerData/customer_search.png"></image>
                 <view class="search_input">
-                  <input placeholder="可用名字、手机号或美容师搜索" bindconfirm='myway' focus='{{ss}}' placeholder-style="font-size:12px;" />
+                  <input placeholder="可用名字、手机号或美容师搜索" bindconfirm='onSearch' focus='{{autoFocus}}' placeholder-style="font-size:12px;" />
                 </view>
               </view>
               <view class="search-btn" catchtap='toggleSearchBox'>取消</view>
@@ -43,23 +43,54 @@
                   <image class='new-item__icon' src='http://www.hzmvip.com/images/managerCustomerData/xinjian.png' mode="widthFix"></image>
                   <view class='new-item__text'>新建</view>
                 </navigator>
-                <view class='new-item'>
+                <view class='new-item' catchtap='assign'>
                   <image class='new-item__icon' src='http://www.hzmvip.com/images/managerCustomerData/fenpei.png' mode='widthFix'></image>
                   <view class='new-item__text'>分配</view>
                 </view>
-                <view class='new-item'>
+                <view class='new-item' catchtap="sortItem">
                   <image class='new-item__icon' src='http://www.hzmvip.com/images/managerCustomerData/shaixuan.png' mode='widthFix'></image>
                   <view class='new-item__text'>筛选</view>
                 </view>
               </view>
             </view>
           </view>
+          <view class="btn-group" hidden="{{isAssign ? false : true}}">
+            <view class="btn btn-cancel" bindtap='cancelAssign'>取消</view>
+            <view class="btn btn-confirm" bindtap='confirmAssign'>确认</view>
+          </view>
+        </view>
+      </view>
+      <view class="section" style="padding-top: {{isAssign ? '200rpx' : '100rpx'}}">
+        <view class="list" wx:for="{{list1}}" wx:key="{{index}}" data-id="{{item.id}}" data-index="{{index}}" bindtap='selectItem'>
+          <image class="select" wx:if="{{item.selected}}" src="http://www.hzmvip.com/images/managerCustomerData/selected.png"></image>
+          <image class="select" wx:else src="http://www.hzmvip.com/images/managerCustomerData/select.png" hidden="{{isAssign ? false : true}}"></image>
+          <image class="user-image" src="{{item.src}}"></image>
+          <view class="main-content">
+            <view class="name">{{item.name}}</view>
+            <view class="time">
+              <image class="time-image" src="http://www.hzmvip.com/images/time.png"></image>
+              <view class="time-text">最近活跃时间：2018-7-17</view>
+            </view>
+            <view class="main-content__catlog">
+              <view class="catlog">
+                <view class="title">类别：</view>
+                <view class="content">其他</view>
+              </view>
+              <view class="catlog">
+                <view class="title">所属技师：</view>
+                <view class="content">金金旺</view>
+              </view>
+            </view>
+          </view>
+          <view class="tel-icon" catchtap="makeCall" data-phone="{{item.phone}}">
+            <image src="http://www.hzmvip.com/images/managerCustomerData/phone.png" mode="widthFix"></image>
+          </view>
         </view>
       </view>
     </view>
     <!-- 我的顾客 -->
     <view class="my-customer" hidden="{{activeIndex != 1}}">
-      <view class="list" wx:for="{{list}}" wx:key="{{index}}">
+      <view class="list" wx:for="{{list}}" wx:key="{{index}}" data-id="{{item.id}}" data-index="{{index}}" bindtap='selectItem'>
         <image class="user-image" src="{{item.src}}"></image>
         <view class="main-content">
           <view class="name">{{item.name}}</view>
@@ -68,8 +99,28 @@
             <view class="time-text">最近活跃时间：2017-8-8</view>
           </view>
         </view>
-        <view class="tel-icon">
+        <view class="tel-icon" catchtap="makeCall" data-phone="{{item.phone}}">
           <image src="http://www.hzmvip.com/images/managerCustomerData/phone.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </view>
+    <!-- 筛选遮罩层 -->
+    <view class="mask" hidden="{{!showMask}}">
+      <view class="mask-title">筛选</view>
+      <scroll-view scroll-y class="mask-content">
+        <view class="mask-content__title">全部分类</view>
+        <view class="mask-content__items">
+          <block wx:for="{{discountList}}" wx:key="{{index}}">
+            <view class="mask-content__item {{item.selectedIndex  ? 'selected' : ''}}" catchtap="selectCatlog" data-index="{{index}}">
+              <text class="icon" style="background-color: {{item.iconColor}}">{{item.icon}}</text>{{item.text}}
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+      <view class="mask-footer">
+        <view class="clear" bindtap='clearSort'>清除筛选</view>
+        <view class="confirm" bindtap='confirmSort'>确定
+          <view class="confirm-number" hidden="{{!(selectedNum > 0)}}">{{selectedNum}}</view>
         </view>
       </view>
     </view>

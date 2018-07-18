@@ -5,8 +5,18 @@
     "pages/work/work",
     "pages/managerCustomerData_new/managerCustomerData_new",
     "pages/userCenter/userCenter",
+    "pages/userInfo/userInfo",
+    "pages/userPoints/userPoints",
+    "pages/userWallet/userWallet",
+    "pages/userComment/userComment",
+    "pages/userFamily/userFamily",
+    "pages/itemList/itemList",
+    "pages/shopInfo/shopInfo",
     "pages/addRecords/addRecords",
-    "pages/setCustomerData/setCustomerData"
+    "pages/customerCenter/customerCenter",
+    "pages/selectMRS/selectMRS",
+    "pages/setCustomerData/setCustomerData",
+    "pages/buy/buy"
   ],
   "window": {
     "backgroundTextStyle": "light",
