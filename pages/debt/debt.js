@@ -1,15 +1,11 @@
-// pages/customerCenter/customerCenter.js
+// pages/debt/debt.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [
-      { "name": "王金", "reader": 3, "done": "今天对王大师进行了头部护理,大师感觉效果还不错,说下次还会光临。", "plan": "王大师人很好,很亲切。", "commentNumber": 1, "mark": 50 },
-      { "name": "王金", "reader": 3, "done": "今天对王大师进行了头部护理,大师感觉效果还不错,说下次还会光临。", "plan": "王大师人很好,很亲切。", "commentNumber": 1, "mark": 50 },
-      { "name": "王金", "reader": 3, "done": "今天对王大师进行了头部护理,大师感觉效果还不错,说下次还会光临。", "plan": "王大师人很好,很亲切。", "commentNumber": 1, "mark": 50 },
-    ],
+  
   },
 
   /**

@@ -1,1 +1,123 @@
-/* pages/customerCenter/customerCenter.wxss */
+page{
+  background-color: #eee;
+}
+.my-info{
+  display: flex;
+  border-bottom: 15rpx solid #eee;
+  background-color: #fff;
+}
+.my-info .info{
+  width: 33.33%;
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 24rpx;
+}
+.my-info .info .number .b{
+  margin-right: 6rpx;
+  font-weight: 700;
+  font-size: 48rpx;
+}
+.my-info .info:not(:last-child){
+  border-right: 1px solid #eee;
+}
+.my-info .info:nth-child(1) .number{
+  color: #fe6671;
+}
+.my-info .info:nth-child(2) .number{
+  color: #e074fc;
+}
+.my-info .info:nth-child(3) .number{
+  color: #ffae00;
+}
+.item-list{
+  background-color: #fff;
+}
+.item-list .item{
+  display: flex;
+  align-items: center;
+  padding: 25rpx 30rpx;
+  border-bottom: 1px solid #eee;
+}
+.item-list .item .item-image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.item-list .item .item-text{
+  flex: 1;
+  color: #666;
+  font-size: 28rpx;
+}
+.item-list .item .item-total{
+  margin-right: 20rpx;
+  font-size: 24rpx;
+  color: #9d9d9d;
+}
+.item-list .item .item-detail{
+  width: 16rpx;
+  height: 22rpx;
+}
+.summarys{
+  padding: 0 30rpx;
+}
+.summary .summary-time{
+  text-align: center;
+}
+.summary .summary-time .summary-time_text{
+  padding: 4rpx 10rpx;
+  color: #fff;
+  background-color: #c5c6c8;
+  font-size: 22rpx;
+  border-radius: 6rpx;
+}
+.summary .summary-user{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #999;
+}
+.summary .summary-user image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+.summary .summary-user .name{
+  flex: 1;
+  color: #666;
+}
+.summary-box{
+  width: 70%;
+  margin: 0 auto;
+  padding: 20rpx;
+  font-size: 28rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.summary-box .title{
+  color: #48a5ea;
+  font-size: 30rpx;
+}
+.summary-box .content{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-top: 10rpx;
+  overflow: hidden; 
+}
+.summary-box .content .h1{
+  margin-right: 10rpx;
+  color: #999;
+}
+.summary-box .content .h2{
+  color: #666;
+}
+.summary-box .status{
+  display:flex;
+  margin-top:20rpx;
+  padding:20rpx 0;
+  border-top:1rpx solid #eee;
+  font-size:26rpx;
+  color:#666;
+
+}

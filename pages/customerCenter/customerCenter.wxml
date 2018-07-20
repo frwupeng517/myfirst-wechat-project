@@ -1,2 +1,85 @@
-<!--pages/customerCenter/customerCenter.wxml-->
-<text>pages/customerCenter/customerCenter.wxml</text>
+<view class="section">
+  <view class="my-info">
+    <view class="info">
+      <navigator hover-class='none' url='../userPoints/userPoints'>
+        <view class="number">
+          <text class="b">1</text>张
+        </view>
+        <view class="text">优惠券</view>
+      </navigator>
+    </view>
+    <view class="info">
+      <navigator hover-class='none' url='../userWallet/userWallet'>
+        <view class="number">
+          <text class="b">4</text>个
+        </view>
+        <view class="text">套餐</view>
+      </navigator>
+    </view>
+    <view class="info">
+      <navigator hover-class='none' url='../userComment/userComment'>
+        <view class="number">
+          <text class="b">69</text>分
+        </view>
+        <view class="text">积分</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="item-list">
+    <navigator class="item" hover-class='none' url='../setCustomerData/setCustomerData'>
+      <image class="item-image" src="http://www.hzmvip.com/images/customerCenter/data.png" mode='widthFix'></image>
+      <view class="item-text">资料</view>
+      <image class="item-detail" src="http://www.hzmvip.com/images/workDiary/heifan.png"></image>
+    </navigator>
+    <navigator class="item" hover-class='none' url='../customerOrder/customerOrder'>
+      <image class="item-image" src="http://www.hzmvip.com/images/userCenter/myFamily.png" mode='widthFix'></image>
+      <view class="item-text">订单</view>
+      <view class="item-total">200个</view>
+      <image class="item-detail" src="http://www.hzmvip.com/images/workDiary/heifan.png"></image>
+    </navigator>
+    <navigator class="item" hover-class='none' url='../addressSelection/addressSelection'>
+      <image class="item-image" src="http://www.hzmvip.com/images/userCenter/itemList.png" mode='widthFix'></image>
+      <view class="item-text">地址</view>
+      <image class="item-detail" src="http://www.hzmvip.com/images/workDiary/heifan.png"></image>
+    </navigator>
+    <navigator class="item" hover-class='none' url='../cards_project/cards_project'>
+      <image class="item-image" src="http://www.hzmvip.com/images/userCenter/shopInfo.png" mode='widthFix'></image>
+      <view class="item-text">卡项</view>
+      <image class="item-detail" src="http://www.hzmvip.com/images/workDiary/heifan.png"></image>
+    </navigator>
+    <navigator class="item" hover-class='none' url='../myFans/myFans'>
+      <image class="item-image" src="http://www.hzmvip.com/images/userCenter/set.png" mode='widthFix'></image>
+      <view class="item-text">粉丝</view>
+      <image class="item-detail" src="http://www.hzmvip.com/images/workDiary/heifan.png"></image>
+    </navigator>
+    <navigator class="item" hover-class='none' url='../debt/debt'>
+      <image class="item-image" src="http://www.hzmvip.com/images/userCenter/set.png" mode='widthFix'></image>
+      <view class="item-text">欠款</view>
+      <image class="item-detail" src="http://www.hzmvip.com/images/workDiary/heifan.png"></image>
+    </navigator>
+  </view>
+  <view class="summarys">
+    <view class="summary" wx:for="{{list}}" wx:key="{{index}}">
+      <view class="summary-time">
+        <text class="summary-time_text">8月7日 22:11</text>
+      </view>
+      <view class="summary-user">
+        <image src="http://www.hzmvip.com/images/ceshi.jpg"></image>
+        <text class="name">{{item.name}}</text>
+        <text class="read">{{item.reader}}人已阅</text>
+      </view>
+      <navigator class="summary-box" hover-class='none' url=''>
+        <view class="title">{{item.name}}的日志</view>
+        <view class="content">
+          <text class="h1">本日工作：</text>
+          <text class="h2">{{item.done}}</text>
+        </view>
+        <view class="content">
+          <text class="h1">顾客印象：</text>
+          <text class="h2">{{item.plan}}</text>
+        </view>
+        <view class="status">期数：铺垫期</view>
+      </navigator>
+    </view>
+  </view>
+</view>

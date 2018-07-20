@@ -16,7 +16,12 @@
     "pages/customerCenter/customerCenter",
     "pages/selectMRS/selectMRS",
     "pages/setCustomerData/setCustomerData",
-    "pages/buy/buy"
+    "pages/buy/buy",
+    "pages/customerOrder/customerOrder",
+    "pages/addressSelection/addressSelection",
+    "pages/cards_project/cards_project",
+    "pages/myFans/myFans",
+    "pages/debt/debt"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,2 +1,21 @@
-<!--pages/addRecords/addRecords.wxml-->
-<text>pages/addRecords/addRecords.wxml</text>
+<view class="section">
+  <view class="head">
+    <image class="avatar" src="http://www.hzmvip.com/images/customer.jpg"></image>
+    <view class="content">
+      <view class="name">王金金</view>
+      <view class="time">
+        <image src='http://www.hzmvip.com/images/time.png'></image>
+        <view class='time_txt'>最近活跃时间：2018-05-07 13:14:20</view>
+      </view>
+    </view>
+  </view>
+  <picker class="multiPicker" mode='multiSelector' bindchange='multiSelectorChange' bindcolumnchange='multiSelectorColumnChange' value='{{multiIndex}}' range='{{multiSelectorArr}}'>
+    <view class="picker">
+      {{multiSelectorArr[0][multiIndex[0]]}} > {{multiSelectorArr[1][multiIndex[1]]}}
+    </view>
+  </picker>
+  <textarea class="work" placeholder='请填写日志内容'></textarea>
+  <navigator class="save" hover-class='none' url='../customerCenter/customerCenter' open-type='redirect'>
+    <view class="btn">保存</view>
+  </navigator>
+</view>
