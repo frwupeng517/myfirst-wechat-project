@@ -1,0 +1,33 @@
+<view class="my-package">
+  <view class="item" wx:for="{{itemList}}" wx:key="{{index}}">
+    <view class="item-top">
+      <view class="item-top__left">
+        <view class="name">{{item.name}}</view>
+        <view class="period">使用期限：还有 <text class="day">32</text> 天</view>
+      </view>
+      <view class="item-top__choose" id="{{index}}" bindtap='trigger'>选择服务
+        <text class="i"></text>
+      </view>
+      <navigator class="item-top__use" hover-class='none' url='../shopArrange/shopArrange' hidden="{{showArr[index] ? false : true}}">使用</navigator>
+    </view>
+    <view class="item-details" hidden="{{showArr[index]?false:true}}">
+      <view class="detail" wx:for="{{item.list}}" wx:key="{{index}}">
+        <view class="dl">
+          <view class="index">{{index+1}}</view>
+        </view>
+        <view class="dl">
+          <view class="span">明眸拔筋护眼</view>
+          <view class="span">109元
+            <image src="http://www.hzmvip.com/images/time1.png"></image>50分钟
+          </view>
+        </view>
+        <view class="dl">×4</view>
+        <view class="num">
+          <view class="minus" id="{{item.id}}" data-order="{{item.order}}" bindtap='minus'>-</view>
+          <view class="num-text">{{item.num}}</view>
+          <view class="plus" id="{{item.id}}" data-order="{{item.order}}" bindtap='plus'>+</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

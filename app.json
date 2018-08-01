@@ -21,6 +21,13 @@
     "pages/addressSelection/addressSelection",
     "pages/cards_project/cards_project",
     "pages/myFans/myFans",
+    "pages/myPackage/myPackage",
+    "pages/myPoints/myPoints",
+    "pages/addService/addService",
+    "pages/addProduct/addProduct",
+    "pages/addCombo/addCombo",
+    "pages/myCoupon/myCoupon",
+    "pages/shopArrange/shopArrange",
     "pages/debt/debt"
   ],
   "window": {

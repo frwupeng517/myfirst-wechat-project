@@ -58,7 +58,7 @@ page{
   height: 22rpx;
 }
 .summarys{
-  padding: 0 30rpx;
+  padding: 0 30rpx 180rpx;
 }
 .summary .summary-time{
   text-align: center;
@@ -120,4 +120,55 @@ page{
   font-size:26rpx;
   color:#666;
 
+}
+.footer{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30rpx;
+  z-index: 100;
+  background-color: #fff;
+}
+.footer .btn{
+  padding: 25rpx 0;
+  text-align: center;
+  font-size: 36rpx;
+  color: #fff;
+  background-color: #fb4791;
+  border-radius: 5rpx;
+}
+.shade{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0,0,0,0.7);
+  transform: scale(0);
+  transform-origin: 50% 93%;
+  transition: all 150ms linear;
+}
+.shade.active{
+  transform: scale(1);
+}
+.shade .items{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.shade_item, .cancel{
+  margin-bottom: 10rpx;
+  padding: 25rpx 0;
+  font-size: 36rpx;
+  color: #f66174;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10rpx;
 }

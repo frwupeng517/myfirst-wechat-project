@@ -1,0 +1,23 @@
+<view class="myCoupon">
+  <view class="card" wx:for="{{coupon}}" wx:key="{{index}}">
+    <view class="card-info">
+      <view class="left">
+        <view class="amount">￥100</view>
+        <view class="name">代金券</view>
+      </view>
+      <view class="main">
+        <view class="status">可以使用</view>
+        <view class="usage">线上线下美容服务</view>
+        <view class="deadline">有效日期： 2018-12-12 00:00:00</view>
+        <view class="icon_bg"></view>
+        <view class="icon_title">美容</view>
+        <view class="down" wx:if="{{showArr[item.num] === true}}" bindtap='toggle' data-num="{{item.num}}">∧</view>
+        <view class="down" wx:else bindtap='toggle' data-num="{{item.num}}">∨</view>
+      </view>
+    </view>
+    <view class="card-remark" hidden="{{showArr[item.num]?false:true}}">
+      <view class="remark">券可用项目：美容</view>
+      <view class="remark">券说明：美容</view>
+    </view>
+  </view>
+</view>
