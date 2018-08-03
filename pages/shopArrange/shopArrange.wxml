@@ -1,2 +1,30 @@
 <!--pages/shopArrange/shopArrange.wxml-->
-<text>pages/shopArrange/shopArrange.wxml</text>
+<view class="section">
+  <view class="tip">
+    <image src="http://www.hzmvip.com/images/tip.png" mode="widthFix"></image>
+    <view class="tip-text">小提示：已预约技师可再次预约，预约后技师会另行电话与您确定服务时间。</view>
+  </view>
+  <view class="not-choose">不选择美容师</view>
+  <view class="items">
+    <view class="item" wx:for="{{MRS}}" wx:key="index" bindtap='gonext'>
+      <image class="avatar" src="http://www.hzmvip.com/images/ceshi.jpg" mode="widthFix"></image>
+      <view class="list">
+        <view class="list-top">
+          <view class="list-top__name">刘爱梅 美甲师</view>
+          <view class="list-top__number">工号：9号</view>
+        </view>
+        <view class="list-intro">让你拥有身心灵的健康，留住青春，留住美丽，是我的奋斗目标以及作为美业的我奋斗终身！</view>
+        <view class="list-ratings">
+          <view class="list-ratings__item">
+            <image src="http://www.hzmvip.com/images/haoping.png" mode="widthFix"></image>
+            <view class="text">好评数：48</view>
+          </view>
+          <view class="list-ratings__item">
+            <image src="http://www.hzmvip.com/images/yuexiao.png" mode="widthFix"></image>
+            <view class="text">357单</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

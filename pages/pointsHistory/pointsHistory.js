@@ -1,37 +1,13 @@
-// pages/shopArrange/shopArrange.js
+// pages/pointsHistory/pointsHistory.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    MRS: [
-      { 'id': '1' },
-      { 'id': '2' },
-      { 'id': '3' },
-      { 'id': '4' },
-      { 'id': '5' },
-    ],
-    go: ''
+  
   },
-  gonext() {
-    switch(this.data.go) {
-      case 1:
-        wx.navigateTo({
-          url: '../serviceTime/serviceTime',
-        })
-        break
-      case 2:
-        wx.navigateTo({
-          url: '../addWorkSummary/addWorkSummary',
-        })
-        break
-      default:
-        wx.navigateTo({
-          url: '../timePicker/timePicker',
-        })
-    } 
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

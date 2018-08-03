@@ -1,0 +1,34 @@
+<!--pages/timePicker/timePicker.wxml-->
+<view class="section">
+  <view class="box">
+    <view class="box-item">
+      <view class="box-item__label">预约技师：</view>
+      <view class="box-item__name">朱桃花</view>
+    </view>
+    <view class="box-item">
+      <view class="box-item__label">预约项目：</view>
+      <view class="box-item__name">面部护理</view>
+    </view>
+    <view class="box-item">
+      <view class="box-item__label">总价：</view>
+      <view class="box-item__name red">￥298.00</view>
+    </view>
+  </view>
+  <view class="choose-time">请选择预约时间</view>
+  <view class="date-box">
+    <view class="prev"></view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2030-09-01" bindchange='bindDateChange'>
+      <view class="picker">日期：{{date}}</view>
+    </picker>
+    <view class="next"></view>
+  </view>
+  <view class="table">
+    <view class="item {{item.order =='不可预约' ? 'disable' : ''}} {{index === selectedIndex ? 'selected' : ''}}" wx:for="{{order}}" wx:key="{{index}}" data-order="{{item.order}}" data-index="{{index}}" bindtap='order'>
+      <view class="time">{{item.time}}</view>
+      <view class="order">{{item.order}}</view>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="btn">确定并支付</view>
+  </view>
+</view>

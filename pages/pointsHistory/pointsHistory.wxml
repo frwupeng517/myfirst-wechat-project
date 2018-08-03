@@ -1,0 +1,12 @@
+<!--pages/pointsHistory/pointsHistory.wxml-->
+<view class="detail">
+  <view class="item">
+    <view class="item-left">
+      <view class="item-left__name">面部拨筋 - 支付</view>
+      <view class="time">2016-1-12 15:32:40</view>
+    </view>
+    <view class="item-right">
+      <view class="item-right__number green">+60</view>
+    </view>
+  </view>
+</view>

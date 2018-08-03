@@ -66,7 +66,6 @@ Page({
   },
   // 减
   minus(e) {
-    console.log(e) 
     let id = e.currentTarget.id,
         order = e.currentTarget.dataset.order,
         itemList = this.data.itemList
@@ -85,7 +84,6 @@ Page({
   },
   // 加
   plus(e) {
-    console.log(e)
     let id = e.currentTarget.id,
       order = e.currentTarget.dataset.order,
       itemList = this.data.itemList

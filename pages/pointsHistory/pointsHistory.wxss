@@ -1,0 +1,40 @@
+/* pages/pointsHistory/pointsHistory.wxss */
+page{
+  background: #eee;
+}
+.detail{
+  margin: 20rpx 0;
+}
+.detail .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 40rpx;
+  color: #4d4d4d;
+  font-size: 28rpx;
+  background: #fff;
+}
+.detail .item:not(:last-child){
+  border-bottom: 1rpx solid #eee;
+}
+.item-left__name, .item-left__order{
+  margin-bottom: 20rpx;
+}
+.time{
+  color: #888;
+}
+.item-right__number{
+  font-size: 40rpx;
+  font-weight: 600;
+}
+.item-right__number.green{
+  color: #69b81c;
+}
+.item-right__number.red{
+  color: #f55f5e;
+}
+.item-right__number .remark{
+  font-size: 24rpx;
+  color: #888;
+  text-align: center;
+}

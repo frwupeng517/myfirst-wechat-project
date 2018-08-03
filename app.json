@@ -28,6 +28,8 @@
     "pages/addCombo/addCombo",
     "pages/myCoupon/myCoupon",
     "pages/shopArrange/shopArrange",
+    "pages/timePicker/timePicker",
+    "pages/pointsHistory/pointsHistory",
     "pages/debt/debt"
   ],
   "window": {

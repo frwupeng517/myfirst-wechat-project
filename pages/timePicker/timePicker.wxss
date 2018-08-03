@@ -1,0 +1,97 @@
+/* pages/timePicker/timePicker.wxss */
+.box{
+  width: 90%;
+  margin: 0 auto;
+  border: 1rpx solid red;
+  border-radius: 10rpx;
+}
+.box-item{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx;
+  padding: 10rpx 0;
+  font-size: 28rpx;
+}
+.box-item:not(:last-child){
+  border-bottom: 1rpx dashed darkgray;
+}
+.box-item__name.red{
+  font-weight: 600;
+  color: red;
+}
+.choose-time{
+  padding: 30rpx 0;
+  text-align: center;
+  font-size: 26rpx;
+  color: #666;
+}
+.date-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  font-size: 26rpx;
+  background: #fd888e;
+  color: #fff;
+}
+.date-box .prev, .date-box .next{
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 0 1rpx 1rpx;
+  transform: rotate(45deg);
+}
+.date-box .prev{
+  border-width: 0 0 1rpx 1rpx;
+  transform: rotate(45deg);
+}
+.date-box .next{
+  border-width: 1rpx 1rpx 0 0 ;
+  transform: rotate(45deg);
+}
+.table{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50rpx 57rpx;
+}
+.table .item{
+  width: 24%;
+  text-align: center;
+  font-size: 30rpx;
+  border-right: 1rpx solid darkgray;
+  border-bottom: 1rpx solid darkgray;
+}
+.table .item:nth-child(-n+4){
+  border-top: 1rpx solid darkgray; 
+}
+.table .item:nth-child(4n+1){
+  border-left: 1rpx solid darkgray; 
+}
+.table .item .time{
+  padding: 10rpx;
+  font-size: 26rpx;
+}
+.table .item .order{
+  padding-bottom: 10rpx;
+  font-size: 24rpx;
+}
+.table .item.disable{
+  background: #eee;
+}
+.table .item.selected{
+  background: #fd888e;
+  color: #fff;
+}
+.footer{
+  padding: 15rpx;
+}
+.footer .btn{
+  padding: 20rpx 0;
+  background: #fd888e;
+  color: #fff;
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 32rpx;
+}

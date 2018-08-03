@@ -1,1 +1,110 @@
 /* pages/setCustomerData/setCustomerData.wxss */
+page{
+  padding-bottom: 40rpx;
+}
+.section{
+  border-top: 20rpx solid #eee;
+  font-size: 30rpx;
+}
+.import{
+  padding: 24rpx 0;
+  text-align: center;
+}
+.import image{
+  width: 50rpx;
+}
+.import .text{
+  color: #666;
+}
+.title{
+  padding: 24rpx;
+  color: #333;
+  background: #f7f2f8;
+  border-bottom: 1rpx solid #eee;
+}
+.form-group{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 24rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.form-group.toggle{
+  padding-right: 50rpx;
+}
+.form-group.toggle ::after{
+  position: absolute;
+  top: 30rpx;
+  right: 24rpx;
+  display: block;
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  border-style: solid;
+  border-color: #999;
+  border-width: 1rpx 1rpx 0 0;
+  transform: rotate(45deg);
+}
+.form-group .label{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.form-group input{
+  text-align: right;
+}
+.form-group .label .required{
+  margin-left: 10rpx;
+  color: #e7393c;
+}
+.input_content{
+  text-align: right;
+}
+.picker{
+  color: #666;
+}
+.radio-group .radio:first-child{
+  margin-right: 30rpx;
+}
+.form-group.choose{
+  background: #f7f2f8;
+}
+.choose .choose-icon{
+  width: 40rpx;
+}
+.choose-items .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 24rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.save{
+  width: 90%;
+  margin: 40rpx auto 0;
+  padding: 20rpx;
+  color: #fff;
+  background: #fb6197;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  text-align: center;
+}
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 999;
+}
+.mask-content{
+  width: 80%;
+  margin: 70% auto 0;
+  text-align: center;
+  color: #fff;
+}
+.loading{
+  margin-top: 20rpx;
+}
