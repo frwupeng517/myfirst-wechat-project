@@ -1,2 +1,32 @@
-<!--pages/debt/debt.wxml-->
-<text>pages/debt/debt.wxml</text>
+<!--pages/myPoints/myPoints.wxml-->
+<view class="section">
+  <view class="point">
+    <view class="current-point">当前欠款</view>
+    <view class="point-content">
+      <view class="number"><b>1</b>元</view>
+    </view>
+  </view>
+  <view class="detail">
+    <view class="item">
+      <view class="item-left">
+        <view class="item-left__name">面部拨筋 - 支付</view>
+        <view class="time">2016-1-12 15:32:40</view>
+      </view>
+      <view class="item-right">
+        <view class="item-right__number green">+60</view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-left">
+        <view class="item-left__name">会员购买商品返还金额</view>
+        <view class="item-left__order">订单号：45185632654464654</view>
+        <view class="time">2016-1-12 15:32:40</view>
+      </view>
+      <view class="item-right">
+        <view class="item-right__number red">+60</view>
+        <view class="item-right__remark">转正</view>
+      </view>
+    </view>
+    <view class="title">欠款明细</view>
+  </view>
+</view>

@@ -1,1 +1,31 @@
 /* pages/addressSelection/addressSelection.wxss */
+page{
+  padding-top: 20rpx;
+  background: #eee;
+}
+.address{
+  padding: 0 40rpx;
+  background: #fff;
+}
+.list{
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+.list .top{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  color: #4b4b4b;
+  height: 44rpx;
+  line-height: 44rpx;
+}
+.list .detail-address{
+  display: flex;
+  font-size: 22rpx;
+  color: #acacac;
+  line-height: 28rpx;
+}
+.list .detail-address .selected{
+  margin-right: 10rpx;
+  color: #ff8d28;
+}

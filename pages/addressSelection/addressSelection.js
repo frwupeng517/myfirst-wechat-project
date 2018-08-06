@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    addressLists: [
+      {"name": "王二蛋", "phone": "13378541122", "address": "武汉市洪山区光谷一路当代国际花园五区1701", "default": true},
+      { "name": "王二蛋", "phone": "13378541122", "address": "武汉市洪山区光谷一路当代国际花园五区1701", "default": false},
+      { "name": "王二蛋", "phone": "13378541122", "address": "武汉市洪山区光谷一路当代国际花园五区1701", "default": false}
+    ]
   },
 
   /**

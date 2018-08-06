@@ -1,2 +1,15 @@
 <!--pages/addressSelection/addressSelection.wxml-->
-<text>pages/addressSelection/addressSelection.wxml</text>
+<view class="section">
+  <view class="address">
+    <navigator hover-class='none' class="list" wx:for="{{addressLists}}" wx:key="{{index}}">
+      <view class="top">
+        <view class="name">{{item.name}}</view>
+        <view class="phone">{{item.phone}}</view>
+      </view>
+      <view class="detail-address">
+        <view class="selected" wx:if="{{item.default}}">[默认]</view>
+        <view>{{item.address}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>

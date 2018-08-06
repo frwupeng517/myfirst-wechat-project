@@ -1,2 +1,103 @@
 <!--pages/customerOrder/customerOrder.wxml-->
-<text>pages/customerOrder/customerOrder.wxml</text>
+<view class="section">
+  <view class="tabs-navbar">
+    <block wx:for="{{tabs}}" wx:key="{{index}}">
+      <view id="{{index}}" class="tab {{activeIndex == index ? 'on' : ''}}" bindtap='tabClick'>{{item}}</view>
+    </block>
+    <view class="slidebar" style="width: {{width}}px; transform: translateX({{slideOffset}}px); -webkit-transform: translateX({{slideOffset}}px)"></view>
+  </view>
+  <view class="tabs-content">
+    <view class="common-order" hidden="{{activeIndex != 0}}">
+      <view class="order-item">
+        <view class="order-item__title">
+          <view class="title">
+            <view class="item meirong">美容</view>
+          </view>
+          <view class="status">订单完成</view>
+        </view>
+        <view class="order-item__content">
+          <view class="avatar">
+            <image src="http://www.hzmvip.com/images/project_water_l.jpg"></image>
+          </view>
+          <view class="details">
+            <view class="detail main">水凝活肤</view>
+            <view class="detail">
+              <image src="http://www.hzmvip.com/images/time1.png"></image>
+              使用期限30天
+            </view>
+            <view class="detail">
+              下单时间：50分钟
+            </view>
+          </view>
+        </view>
+        <view class="order-item__footer">
+          <view class="amount">￥ 998</view>
+          <view class="btns">
+            <view class="btn">已经支付</view>
+          </view>
+        </view>
+      </view>
+      <view class="order-item">
+        <view class="order-item__title">
+          <view class="title">
+            <view class="item meirong">美容</view>
+          </view>
+          <view class="status">订单完成</view>
+        </view>
+        <view class="order-item__content">
+          <view class="avatar">
+            <image src="http://www.hzmvip.com/images/project_water_l.jpg"></image>
+          </view>
+          <view class="details">
+            <view class="detail main">水凝活肤</view>
+            <view class="detail">
+              <image src="http://www.hzmvip.com/images/time1.png"></image>
+              使用期限30天
+            </view>
+            <view class="detail">
+              下单时间：50分钟
+            </view>
+          </view>
+        </view>
+        <view class="order-item__footer">
+          <view class="amount">￥ 998</view>
+          <view class="btns">
+            <view class="btn">已经支付</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="prompt-order" hidden="{{activeIndex == 0}}">
+      <view class="order-item">
+        <view class="order-item__title">
+          <view class="title">
+            <view class="item meirong">美容</view>
+            <view class="item pintuan">拼团</view>
+          </view>
+          <view class="status">拼团中，差2人</view>
+        </view>
+        <view class="order-item__content">
+          <view class="avatar">
+            <image src="http://www.hzmvip.com/images/project_water_l.jpg"></image>
+          </view>
+          <view class="details">
+            <view class="detail main">水凝活肤</view>
+            <view class="detail">
+              <image src="http://www.hzmvip.com/images/time1.png"></image>
+              使用期限30天
+            </view>
+            <view class="detail">
+              下单时间：50分钟
+            </view>
+          </view>
+        </view>
+        <view class="order-item__footer">
+          <view class="amount">￥ 998</view>
+          <view class="btns">
+            <view class="btn">邀请好友拼团</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

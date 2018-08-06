@@ -1,1 +1,110 @@
 /* pages/customerOrder/customerOrder.wxss */
+.tabs-navbar{
+  position: relative;
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+
+}
+.tabs-navbar .tab{
+  width: 50%;
+  padding: 26rpx 0;
+  font-size: 30rpx;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.tabs-navbar .tab.on{
+  color: #fe6672;
+}
+.slidebar{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 6rpx;
+  transition: transfrom 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  background-color: #fe6672;
+}
+.tabs-content{
+  border-top: 6rpx solid #eee;
+}
+.order-item{
+  border-bottom: 20rpx solid #eee;
+}
+.order-item__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  font-size: 24rpx;
+}
+.order-item__title .title{
+  display: flex;
+}
+.order-item__title .item{
+  padding: 4rpx 10rpx;
+  margin-right: 10rpx;
+  color: #fff;
+  border-radius: 8rpx;
+}
+.meirong{
+  background-color: #6fd3f9;
+}
+.pintuan{
+  background-color: pink;
+}
+.order-item__title .status{
+  color: #ffbb28;
+}
+.order-item__content{
+  display: flex;
+  align-items: flex-start;
+  padding: 30rpx 20rpx;
+  background-color: #fafafa;
+}
+.order-item__content .avatar{
+  margin-right: 20rpx;
+  border: 1rpx solid #f5f5f5;
+}
+.order-item__content .avatar image{
+  width: 87px;
+  height: 58px;
+}
+.order-item__content .details{
+  flex: 1;
+}
+.order-item__content .details .detail{
+  font-size: 26rpx;
+  color: #aaa;
+}
+.order-item__content .details .detail:not(:last-child) {
+  margin-bottom: 10rpx;
+}
+.order-item__content .details .detail.main{
+  font-size: 32rpx;
+  color: #000;
+}
+.order-item__content .details .detail image{
+  width: 22rpx;
+  height: 22rpx;
+}
+.order-item__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+}
+.order-item__footer .amount{
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #626262;
+}
+.order-item__footer .btn{
+  padding: 14rpx 20rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #fe6672;
+  border-radius: 10rpx;
+  border: 1px solid #e93838;
+}
