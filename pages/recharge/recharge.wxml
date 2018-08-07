@@ -1,0 +1,21 @@
+<view class="section">
+  <view class="pay">
+    <input placeholder='请输入充值金额,购买卡项更优惠~' bindfocus='confirm' placeholder-style='font-size: 80%;'></input>
+  </view>
+  <view class="title">请选择充值金额</view>
+  <view class="card-container">
+    <navigator class="card useable" hover-class='none' url="../byStages/byStages">
+      <view class="card-detail">
+        <view class="avatar">
+          <image src="http://www.hzmvip.com/images/card.png"></image>
+        </view>
+        <view class="content">
+          <view class="name">黄金卡</view>
+          <view class="details">10000元 | 赠送1000</view>
+        </view>
+      </view>
+      <view class="card-total">总价值 11000元</view>
+    </navigator>
+  </view>
+  <navigator class="btn-footer" hover-class='none' url="../byStages/byStages" hidden="{{show}}">确认充值</navigator> 
+</view>

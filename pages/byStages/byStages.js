@@ -1,14 +1,11 @@
-// pages/cards_project/cards_project.js
+// pages/byStages/byStages.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    cards: [
-      {"name": "黄金卡", "amount": "10000", "gift": "1000", "total": "11000"},
-      { "name": "黄金卡", "amount": "10000", "gift": "1000", "total": "0" }
-    ]
+  
   },
 
   /**

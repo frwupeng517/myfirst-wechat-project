@@ -1,2 +1,51 @@
 <!--pages/myFans/myFans.wxml-->
-<text>pages/myFans/myFans.wxml</text>
+<view class="section">
+  <view class="slider-bar">
+    <view class="slider {{selectedIndex == index ? 'selected' : ''}}" wx:for="{{slider}}" wx:key="{{index}}" data-index="{{index}}" bindtap='toggleSlider'>{{item}}</view>
+    <view class="bar" style="width: {{width}}px; transform: translateX({{scrollLeft}}px); -webkit-transform: translateX({{scrollLeft}}px)"></view>
+  </view>
+  <view class="content">
+    <view class="item" wx:for="{{4}}" wx:key="{{index}}" hidden="{{selectedIndex != 0}}">
+      <image class="avatar" src="http://www.hzmvip.com/images/customer.jpg"></image>
+      <view class="center">
+        <view class="space-between">
+          <view class="name">赵丽颖</view>
+          <image class="fans" src="http://www.hzmvip.com/images/fans.png"></image>
+        </view>
+        <view class="text">2018-8-7 17:41:55</view>
+        <view class="space-between">
+          <view class="text">来源：<text class="b">分享</text></view>
+          <view class="text">TA的粉丝：<text class="b">0个</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="item" wx:for="{{4}}" wx:key="{{index}}" hidden="{{selectedIndex != 1}}">
+      <image class="avatar" src="http://www.hzmvip.com/images/customer.jpg"></image>
+      <view class="center">
+        <view class="space-between">
+          <view class="name">张钧蜜</view>
+          <image class="fans" src="http://www.hzmvip.com/images/fans.png"></image>
+        </view>
+        <view class="text">2018-8-7 17:41:55</view>
+        <view class="space-between">
+          <view class="text">来源：<text class="b">分享</text></view>
+          <view class="text">TA的粉丝：<text class="b">0个</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="item" wx:for="{{4}}" wx:key="{{index}}" hidden="{{selectedIndex != 2}}">
+      <image class="avatar" src="http://www.hzmvip.com/images/customer.jpg"></image>
+      <view class="center">
+        <view class="space-between">
+          <view class="name">高圆圆</view>
+          <image class="fans" src="http://www.hzmvip.com/images/fans.png"></image>
+        </view>
+        <view class="text">2018-8-7 17:41:55</view>
+        <view class="space-between">
+          <view class="text">来源：<text class="b">分享</text></view>
+          <view class="text">TA的粉丝：<text class="b">0个</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

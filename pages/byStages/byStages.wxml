@@ -1,0 +1,27 @@
+<view class="section">
+  <view class="card-container">
+    <navigator class="card useable" hover-class='none' url="../byStages/byStages">
+      <view class="card-detail">
+        <view class="avatar">
+          <image src="http://www.hzmvip.com/images/card.png"></image>
+        </view>
+        <view class="content">
+          <view class="name">黄金卡</view>
+          <view class="details">10000元 | 赠送1000</view>
+        </view>
+      </view>
+      <view class="card-total">总价值 11000元</view>
+    </navigator>
+  </view>
+  <view class="title">全额支付</view>
+  <view class="recharge-content">
+    <view class="recharge-content__text">
+      <view>充值卡</view>
+      <view class="red">实付款：999元</view>
+    </view>
+    <view class="recharge-content__icon">
+      <icon type="success" color="red"></icon>
+    </view>
+  </view>
+  <view class="btn-footer">立即支付</view> 
+</view>

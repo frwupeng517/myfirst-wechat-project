@@ -1,2 +1,17 @@
-<!--pages/cards_project/cards_project.wxml-->
-<text>pages/cards_project/cards_project.wxml</text>
+<view class="section">
+  <view class="card-container">
+    <view class="card {{item.total == 0 ? '' : 'useable'}}" wx:for="{{cards}}" wx:key="{{index}}">
+      <view class="card-detail">
+        <view class="avatar">
+          <image src="http://www.hzmvip.com/images/card.png"></image>
+        </view>
+        <view class="content">
+          <view class="name">{{item.name}}</view>
+          <view class="details">{{item.amount}}元 | 赠送{{item.gift}}</view>
+        </view>
+      </view>
+      <view class="card-total">总价值 {{item.total}}元</view>
+    </view>
+  </view>
+  <navigator class="btn-footer" hover-class='none' url="../recharge/recharge">购买新卡</navigator> 
+</view>

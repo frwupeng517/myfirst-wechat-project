@@ -1,10 +1,17 @@
-/* pages/cards_project/cards_project.wxss */
 page{
   padding-top: 20rpx;
   background-color: #eee;
 }
-.section{
-  position: relative;
+.pay{
+  padding: 28rpx;
+  color: #333;
+  background-color: #fff;
+}
+.title{
+  line-height: 3;
+  padding-left: 40rpx;
+  color: #999;
+  font-size: 28rpx;
 }
 .card-container{
   padding: 30rpx;

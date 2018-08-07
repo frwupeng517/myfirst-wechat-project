@@ -1,1 +1,59 @@
-/* pages/myFans/myFans.wxss */
+.slider-bar{
+  position: relative;
+  display: flex;
+  border-bottom: 6rpx solid #eee;
+}
+.slider{
+  width: 33.33%;
+  padding: 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+.slider.selected{
+  color: #fe6771;
+}
+.bar{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 6rpx;
+  background-color: #ef5b5b;
+  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+}
+.item{
+  display: flex;
+  align-items: center;
+  padding: 30rpx 20rpx 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.item .avatar{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+.item .center{
+  flex: 1;
+}
+.item .name{
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  color: #000;
+}
+.item .text{
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+  color: #acacac;
+}
+.item .text .b{
+  color: #000;
+}
+.center .space-between{
+  display: flex;
+  justify-content: space-between;
+}
+.fans{
+  width: 30rpx;
+  height: 30rpx;
+}

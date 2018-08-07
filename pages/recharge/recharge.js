@@ -1,16 +1,17 @@
-// pages/cards_project/cards_project.js
+// pages/recharge/recharge.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    cards: [
-      {"name": "黄金卡", "amount": "10000", "gift": "1000", "total": "11000"},
-      { "name": "黄金卡", "amount": "10000", "gift": "1000", "total": "0" }
-    ]
+    show: true
   },
-
+  confirm() {
+    this.setData({
+      show: false
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
