@@ -1,0 +1,124 @@
+page{
+  background-color: #eee;
+}
+.deduct-top{
+  /* padding: 20rpx 30rpx; */
+  background-color: #fff;
+}
+.deduct-top__board{
+  padding: 20rpx 0;
+  color: #fff;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  background: linear-gradient(to right, #ff5f81, #ff9267);
+}
+.deduct-top__board .title{
+  margin-bottom: 20rpx;
+}
+.deduct-top__board .board{
+  display: flex;
+}
+.sub-board{
+  width: 50%;
+}
+.sub-board:first-child{
+  border-right: 1rpx solid #eee;
+}
+.sub-board .money{
+  margin-top: 10rpx;
+  font-size: 46rpx;
+}
+.slider{
+  position: relative;  
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1rpx solid #ccc;
+}
+.sliderbar{
+  width: 50%;
+  padding: 26rpx 0;
+  font-size: 30rpx;
+  text-align: center;
+}
+.sliderbar.on{
+  color: #fe6672;
+}
+.slider .tab{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 8rpx;
+  background-color: #fe6672;
+  transition: transform .3s;
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+}
+.items{
+  background-color: #fff;
+}
+.items-content{
+  padding: 20rpx 20rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.items-content__title{
+  font-size: 34rpx;
+  color: #333;
+}
+.items-content__mid{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 0;
+}
+.items-content__mid .item{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.items-content__mid .cus{
+  padding-right: 20rpx;
+  color: #333;
+  font-size: 32rpx;
+}
+
+.items-content__mid .mrs{
+  flex: 1;
+  padding-left: 20rpx;
+  color: #fe6672;
+  font-size: 26rpx;
+  border-left: 2rpx solid #999;
+}
+.items-content__mid .status{
+  font-size: 30rpx;
+  color: #fe6672;
+}
+.items-content__time{
+  padding-bottom: 20rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.items-list{
+  display: flex;
+}
+.list{
+  flex: 1;
+  padding: 20rpx 0;
+  text-align: center;
+  color: #666;
+  font-size: 32rpx;
+}
+.list:not(:last-child){
+  border-right: 2rpx solid #eee;
+}
+.list .txt{
+  margin-bottom: 10rpx;
+}
+.nomore{
+  margin-top: 150rpx;
+  text-align: center;
+}
+.nomore image{
+  width: 220rpx;
+}

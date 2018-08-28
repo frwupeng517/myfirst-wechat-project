@@ -23,6 +23,7 @@
     "pages/myFans/myFans",
     "pages/myPackage/myPackage",
     "pages/myPoints/myPoints",
+    "pages/mrsDetail/mrsDetail",
     "pages/addService/addService",
     "pages/addProduct/addProduct",
     "pages/addCombo/addCombo",
@@ -32,6 +33,9 @@
     "pages/pointsHistory/pointsHistory",
     "pages/recharge/recharge",
     "pages/byStages/byStages",
+    "pages/performanceDetail/performanceDetail", 
+    "pages/handworkDetail/handworkDetail",
+    "pages/deductDetail/deductDetail",
     "pages/debt/debt"
   ],
   "window": {

@@ -1,0 +1,39 @@
+<!--pages/mrsDetail/mrsDetail.wxml-->
+<view class="section">
+  <view class="slider-bar">
+    <view class="slider {{activeIndex == index ? 'on' : ''}}" wx:for="{{tabs}}" wx:key="{{index}}" bindtap="toggleTab" data-index="{{index}}">{{item}}</view>
+    <view class="bar" style="width: {{width}}px; transform: translateX({{scrollLeft}}px); -webkit-transform: translateX({{scrollLeft}}px);"></view>
+  </view>
+  <view class="detail-content" hidden='{{activeIndex != 0}}'>
+    <view class="details" wx:for="{{details}}" wx:key="{{index}}">
+      <view class="detail">
+        <view class="detail-item">{{item.item}}</view>
+        <view class="detail-info">
+          <view class="customer">{{item.customer}}</view>
+          <view class="mrs">{{item.mrs}}</view>
+          <view class="status">{{item.status}}</view>
+        </view>
+        <view class="detail-time">订单时间：{{item.time}}</view>
+      </view>
+      <view class="detail-list">
+        <view class="list">
+          <view class="list-name">业绩</view>
+          <view class="list-number">{{item.yeji}}</view>
+        </view>
+        <view class="list">
+          <view class="list-name">手工</view>
+          <view class="list-number">{{item.shougong}}</view>
+        </view>
+        <view class="list">
+          <view class="list-name">划扣</view>
+          <view class="list-number">{{item.huakou}}</view>
+        </view>
+        <view class="list">
+          <view class="list-name">现金</view>
+          <view class="list-number">{{item.xianjin}}</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

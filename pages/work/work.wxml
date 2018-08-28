@@ -12,17 +12,18 @@
             <view class="shop-state">营业中</view>
           </view>
           <view class="p">营业时间：9:00-12:00 14:00-20:00</view>
-          <view class="p">身份：员工</view>
+          <view class="p" wx:if="{{isEmp}}">身份：员工</view>
+          <view class="p" wx:else>身份：店长</view>
         </view>
       </view>
-      <view class="userInfo-toggle">
+      <view class="userInfo-toggle" bindtap="toggleRole">
         <image src='http://www.hzmvip.com/images/work/toggle.png'></image>
         <view class='toggle_txt'>切换身份</view>
       </view>
     </view>
     <view class="userNum">
       <view class="list">
-        <navigator url="" hover-class='none'>
+        <navigator url="../performanceDetail/performanceDetail" hover-class='none'>
           <view class="span">
             <view class="i">100</view>元
           </view>
@@ -30,7 +31,8 @@
         </navigator>
       </view>
       <view class="list">
-        <navigator url="" hover-class='none'>
+        <!-- <navigator url="../handworkDetail/handworkDetail" hover-class='none'> -->
+        <navigator url="../performanceDetail/performanceDetail" hover-class='none'>
           <view class="span">
             <view class="i">10</view>元
           </view>
@@ -38,7 +40,7 @@
         </navigator>
       </view>
       <view class="list">
-        <navigator url="" hover-class='none'>
+        <navigator url="../deductDetail/deductDetail" hover-class='none'>
           <view class="span">
             <view class="i">100</view>元
           </view>

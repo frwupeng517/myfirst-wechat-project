@@ -1,0 +1,62 @@
+<view class="section">
+  <view class="deduct-top">
+    <view class="deduct-top__board">
+      <view class="title">业绩</view>
+      <view class="board">
+        <view class="sub-board">
+          <view class="status">已完成</view>
+          <view class="money">￥999</view>
+        </view>
+        <view class="sub-board">
+          <view class="status">进行中</view>
+          <view class="money">￥88888</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="slider">
+    <block wx:for="{{tabs}}" wx:key="{{index}}">
+      <view class="sliderbar {{activeIndex == index ? 'on' : ''}}" data-current="{{index}}" bindtap='tabClick'>{{item}}</view>
+    </block>
+    <view class="tab" style="width: {{width}}px; transform: translateX({{slideOffset}}px); -webkit-transform: -webkit-translateX({{slideOffset}}px); -moz-transform: -moz-translateX({{slideOffset}}px);"></view>
+  </view>
+  <view class="slider-pannel">
+    <view class="pannel" hidden="{{activeIndex != 0}}">
+      <view class="items">
+        <view class="items-content">
+          <view class="items-content__title">香黛精油护理套餐</view>
+          <view class="items-content__mid">
+            <view class="text cus">白子涵</view>
+            <view class="text mrs">美容师：金金、芳芳、贝贝</view>
+            <view class="text status">完成</view>
+          </view>
+          <view class="items-content__time">订单时间：2017-8-16 10：41</view>
+        </view>
+        <view class="items-list">
+          <view class="list">
+            <view class="txt">业绩</view>
+            <view class="num">3389.00</view>
+          </view>
+          <view class="list">
+            <view class="txt">手工</view>
+            <view class="num">3389.00</view>
+          </view>
+          <view class="list">
+            <view class="txt">划扣</view>
+            <view class="num">3389.00</view>
+          </view>
+          <view class="list">
+            <view class="txt">现金</view>
+            <view class="num">3389.00</view>
+          </view>
+        </view>
+      </view>
+      <view class="nomore">
+        <image src="http://www.hzmvip.com/images/common/nomore.png" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="pannel" hidden="{{activeIndex != 1}}">
+    
+    </view>
+  </view>
+</view>

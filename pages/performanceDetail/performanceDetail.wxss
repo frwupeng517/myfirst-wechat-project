@@ -1,0 +1,68 @@
+.perform-top{
+  padding: 20rpx 30rpx;
+  border-bottom: 10rpx solid #eee;
+}
+.perform-top__board{
+  padding: 20rpx 0;
+  color: #fff;
+  font-size: 26rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  background: linear-gradient(to right, #ff5f81, #ff9267);
+}
+.perform-top__board .title{
+  margin-bottom: 20rpx;
+}
+.perform-top__board .board{
+  display: flex;
+}
+.sub-board{
+  width: 50%;
+}
+.sub-board:first-child{
+  border-right: 1rpx solid #eee;
+}
+.sub-board .money{
+  margin-top: 10rpx;
+  font-size: 46rpx;
+}
+.perform-top__list{
+  display: flex;
+  padding: 20rpx 0;
+}
+.perform-top__list .list{
+  width: 25%;
+  text-align: center;
+  font-size: 26rpx;
+  color: #333;
+}
+.perform-top__list .list:not(:last-child){
+  border-right: 1rpx solid #eee;
+}
+.perform-top__list .list .number{
+  margin-top: 10rpx;
+  color: #eb6651;
+}
+.perform-table{
+  width: auto;
+  padding: 0 20rpx;
+  white-space: nowrap;
+  border-bottom: 10rpx solid #eee;
+}
+.perform-table .tr:not(:first-child) .td{
+  border-top: 1rpx solid #eee;
+  font-size: 24rpx;
+}
+.perform-table .tr .td{
+  display: inline-block;
+  width: 25%;
+  padding: 20rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.perform-table .tr .td:first-child{
+  width: 16%;
+}
+.perform-table .tr .td:not(:last-child){
+  border-right: 2rpx solid #eee;
+}

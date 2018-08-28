@@ -1,0 +1,51 @@
+<view class="section">
+  <view class="perform-top">
+    <view class="perform-top__board">
+      <view class="title">业绩</view>
+      <view class="board">
+        <view class="sub-board">
+          <view class="status">已完成</view>
+          <view class="money">￥999</view>
+        </view>
+        <view class="sub-board">
+          <view class="status">进行中</view>
+          <view class="money">￥88888</view>
+        </view>
+      </view>
+    </view>
+    <view class="perform-top__list">
+      <view class="list">
+        <view class="text">提成</view>
+        <view class="number">￥710</view>
+      </view>
+      <view class="list">
+        <view class="text">划扣</view>
+        <view class="number">￥710</view>
+      </view>
+      <view class="list">
+        <view class="text">欠款</view>
+        <view class="number">￥710</view>
+      </view>
+      <view class="list">
+        <view class="text">服务次数</view>
+        <view class="number">10次</view>
+      </view>
+    </view>
+  </view>
+  <scroll-view scroll-x class="perform-table">
+    <view class="tr">
+      <view class="td">姓名</view>
+      <view class="td">业绩</view>
+      <view class="td">提成</view>
+      <view class="td">划扣</view>
+      <view class="td">完成比例</view>
+    </view>
+    <view class="tr" wx:for="{{items}}" wx:key="{{index}}">
+      <navigator class="td" hover-class='none' url="../mrsDetail/mrsDetail">{{item.one}}</navigator>
+      <view class="td">{{item.two}}</view>
+      <view class="td">{{item.three}}</view>
+      <view class="td">{{item.four}}</view>
+      <view class="td">{{item.five}}</view>
+    </view>
+  </scroll-view>
+</view>
